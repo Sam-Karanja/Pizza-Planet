@@ -17,3 +17,21 @@ body {
   width: 100%;
   justify-content: space-around;
 }
+
+.container-fluid{
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    
+}
+
+.text {
+    padding: 100px;
+    text-align: center;
+}
+
+#submit{
+    padding: 10px;
+    border-radius: 15px
+}
