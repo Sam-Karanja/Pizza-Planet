@@ -33,5 +33,22 @@ body {
 
 #submit{
     padding: 10px;
-    border-radius: 15px
+    border-radius: 15px;
+    background-color: rgb(235, 199, 0);
+}
+
+h3{
+    text-align: center;
+    padding: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 150px; */
+}
+
+.menu p{
+    text-align: center;
+    font-size: larger;
 }
