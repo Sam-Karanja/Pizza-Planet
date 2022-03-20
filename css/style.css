@@ -11,72 +11,91 @@ body {
   width: 100vw;
 }
 
-.nav a {
+.nav {
   display: flex;
-  text-decoration: none;
-  width: 100%;
   justify-content: space-around;
+  padding: 10px;
+}
+ul {
+  display: flex;
 }
 
-.container-fluid{
-    /* background-image: url("../assets/background2.jpg");
+.nav a {
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: x-large;
+  paddin10px
+}
+
+.container-fluid {
+  /* background-image: url("../assets/background2.jpg");
     background-repeat: no-repeat;
     object-fit: cover; */
 
-    background-color: rgb(145, 49, 49);
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    color: white;
-    
+  background-color: rgb(145, 49, 49);
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  color: white;
 }
 
 .text {
-    padding: 100px;
-    text-align: center;
+  padding: 100px;
+  text-align: center;
 }
 
-.button{
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgb(235, 199, 0);
+.button {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(235, 199, 0);
 }
 
-h3{
-    text-align: center;
-    padding: 50px;
+h3 {
+  text-align: center;
+  padding: 50px;
 }
 
-.container{
-    justify-content: space-between;
+.container {
+  justify-content: space-between;
 }
 
-.menu{
-   margin-left: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    /* margin-left: 150px; */
+.menu {
+  margin-left: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 150px; */
 }
 
-.menu p{
-    text-align: center;
-    font-size: larger;
+.menu p {
+  text-align: center;
+  font-size: larger;
 }
 
-.contact{
-    text-align: center;
+.order {
+  display: block;
+  text-align: center;
 }
 
-#message{
-    height: 100px;
+.form-control {
+  margin-left: 450px;
+  height: 300px;
+  padding: ;
 }
 
-.copyright{
-    text-align: center;
-    background-color: brown;
-    color: white;
-    height: 50px;
-    padding: 20px;
-    margin-top: 50px;
+.contact {
+  text-align: center;
+}
+
+#message {
+  height: 100px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: brown;
+  color: white;
+  height: 50px;
+  padding: 20px;
+  margin-top: 50px;
 }
