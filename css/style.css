@@ -71,3 +71,12 @@ h3{
 #message{
     height: 100px;
 }
+
+.copyright{
+    text-align: center;
+    background-color: brown;
+    color: white;
+    height: 50px;
+    padding: 20px;
+    margin-top: 50px;
+}
