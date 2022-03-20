@@ -28,14 +28,7 @@ ul {
 
 }
 
-.tag{
-    display: flex;
-}
-.tag p{
-    color: brown;
-    font-size: larger;
-    font-weight: 300 ; 
-}
+
 .container-fluid {
 
   background-color: rgb(145, 49, 49);
