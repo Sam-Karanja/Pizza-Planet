@@ -24,13 +24,19 @@ ul {
   padding-top: 20px;
   text-decoration: none;
   font-size: x-large;
-  paddin10px
+  padding: 10px'
+
 }
 
+.tag{
+    display: flex;
+}
+.tag p{
+    color: brown;
+    font-size: larger;
+    font-weight: 300 ; 
+}
 .container-fluid {
-  /* background-image: url("../assets/background2.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover; */
 
   background-color: rgb(145, 49, 49);
   display: flex;
@@ -85,7 +91,13 @@ h3 {
 
 .contact {
   text-align: center;
+  padding: 20px;
+  background-color: brown;
+  /* background-image: url("../assets/background2.jpg"); */
+  /* object-fit: cover;
+  background-repeat: no-repeat; */
 }
+
 
 #message {
   height: 100px;
