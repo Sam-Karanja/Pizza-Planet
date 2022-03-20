@@ -19,10 +19,15 @@ body {
 }
 
 .container-fluid{
-    background-color: brown;
+    /* background-image: url("../assets/background2.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover; */
+
+    background-color: rgb(145, 49, 49);
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    color: white;
     
 }
 
@@ -31,7 +36,7 @@ body {
     text-align: center;
 }
 
-#submit{
+.button{
     padding: 10px;
     border-radius: 15px;
     background-color: rgb(235, 199, 0);
@@ -42,7 +47,13 @@ h3{
     padding: 50px;
 }
 
+.container{
+    justify-content: space-between;
+}
+
 .menu{
+   margin-left: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     /* margin-left: 150px; */
@@ -51,4 +62,12 @@ h3{
 .menu p{
     text-align: center;
     font-size: larger;
+}
+
+.contact{
+    text-align: center;
+}
+
+#message{
+    height: 100px;
 }
