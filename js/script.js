@@ -25,23 +25,6 @@ calculate.prototype.cost = function(){
 
 alert("You have selected + this.pieces ")
 
-    // let checkboxes = $('input[name="toppings"]:checked').length;
-    // if (checkboxes<= 4){
-    //     if(this.size === "Large"){
-    //         var toppingsPrice = checkboxes * 150;
-    //     }else if(this.size === "Medium"){
-    //         var toppingsPrice = checkboxes * 100;
-    //     }else if(this.size ==="Small"){
-    //         var toppingsPrice = checkboxes * 50;
-    //     }
-    //     return (sizePrice + crustPrice + toppingsPrice)* this.amount;
-    // }else{
-        
-    //     alert("You've selected more than 4 toppings!!");
-        
-    // }  
-}
-
 calculate.prototype.name =function(){
     let pizzaName =`${this.amount} ${this.size} ${this.crust} ${'crusted pizza, with'} ${this.toppings} ${"for the topping."}`;
     console.log(pizzaName);
@@ -53,5 +36,5 @@ $("#button1").click(function(){
 })
 
 $("#checkout").click(function(){
-    document.write("i love coding")
+    alert("You have selected" + this.pieces + )
 })
