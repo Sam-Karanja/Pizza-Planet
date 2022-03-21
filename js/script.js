@@ -8,51 +8,77 @@ function Order(flavour, toppings, size, crust, pieces) {
 
 Order.prototype.cost = function () {
   if (this.size === "large") {
-    let price = 1200;
+    var sizePrice = 1200;
   } else if (this.size === "medium") {
-    let price = 900;
+    var sizePrice = 900;
   } else if(this.size === "small"){
-    let price = 700;
+    var sizePrice = 700;
   }
 
   if(this.toppings=== "olives"){
-      let toppingsPrice = 120;
+      var toppingsPrice = 120;
     
   }
   else if(this.toppings === "mushroom"){
-      let toppingsPrice = 150;
+      var toppingsPrice = 150;
   }
   else if (this.toppings === "pineapple"){
-      let toppingsPrice = 180;
+      var toppingsPrice = 180;
   }
   else if(this.toppings === "tomato"){
-      let toppingsPrice = 160;
+      var toppingsPrice = 160;
   }
   else if(this.toppings === "veggie-salad"){
-      let toppingsPrice = 170;
+      var toppingsPrice = 170;
   }
  
   if(this.crust === "gluten-free"){
-      let crustPrice = 50;
+      var crustPrice = 50;
   }
   else if (this.crust === "crispy"){
-      let crustPrice = 80;
+      var crustPrice = 80;
   }
  else if (this.crust === "stuffed"){
-     let crustPrice =  70;
+     var crustPrice =  70;
  }
- return (price + toppingsPrice + crustPrice )* this.pieces;
+ return (sizePrice + toppingsPrice + crustPrice )* this.pieces;
 };
 
 $("#order-form").submit(function(event){
     event.preventDefault();
-    let flavour = $("#flavour").val();
-    let toppings = $("#toppings").val();
-    let size = $("#sizee").val();
-    let crust = $("#crust").val();
+    var flavour = $("#flavour").val();
+    var toppings = $("#toppings").val();
+    var size = $("#sizee").val();
+    var crust = $("#crust").val();
+    var pieces = parseInt($('#pieces').val());
+    
 
-   
+    var pizzaOrder = new Order(flavour, toppings, size, crust, pieces);
+    alert(pizzaOrder.cost());
+    $(".deliver").show();
+
+
+    $("#deliver").click(function(){
+        $(".location").show();
+        $(".deliver").hide();
+        // alert(pizzaOrder.cost()+ 200);
+    })
+
+    $("#pick").click(function(){
+        alert("Your order will be ready for pickup in 30 mins")
+    })
+
+    $("#enter").click(function(){
+        alert(pizzaOrder.cost()+ 200);
+        $(".location").hide();
+       
+    })
+
+    var flavour = $("#flavour").val(" ");
+    var toppings = $("#toppings").val(" ");
+    var size = $("#sizee").val(" ");
+    var crust = $("#crust").val(" ");
+    var pieces = parseInt($('#pieces').val(" "));
+     
 })
 
-// price();
-console.log(price)
