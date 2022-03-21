@@ -70,7 +70,7 @@ $("#order-form").submit(function(event){
 
     $("#enter").click(function(){
         alert(pizzaOrder.cost()+ 200);
-        $(".location").hide();
+        $(".location").hide()
        
     })
 
