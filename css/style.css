@@ -76,10 +76,16 @@ h3 {
   text-align: center;
 }
 
+
+
 .form-control {
   margin-left: 450px;
-  height: 300px;
+  height: 350px;
   padding: ;
+}
+
+#checkout{
+  margin-top: 20px;
 }
 
 .contact {
