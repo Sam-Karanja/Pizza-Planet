@@ -84,6 +84,11 @@ h3 {
   padding: ;
 }
 
+#toppings{
+  padding-left: 30%;
+  /* padding-right: 1%; */
+}
+
 #checkout{
   margin-top: 20px;
 }
@@ -110,4 +115,8 @@ h3 {
   height: 50px;
   padding: 20px;
   margin-top: 50px;
+}
+
+.deliver, .location{
+  display: none;
 }
